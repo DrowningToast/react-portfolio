@@ -57,7 +57,7 @@ function App() {
       </div>
       <div className="cards-holder">
         <Card title="About me" path={idCard} hyper="#about"/>
-        <Card title={"Skills & Experiences"} path={Code}/>
+        <Card title={"Skills & Experiences"} path={Code}  hyper="#skills"/>
         <Card title="Projects" path={Blueprint}/>
         <Card title="Contacts" path={Email}/>
       </div>
@@ -91,7 +91,7 @@ function App() {
         </div>
       </div>
 
-      <h1 className="Skills">
+      <h1 className="Skills" id="skills">
         Skills
       </h1>
 
