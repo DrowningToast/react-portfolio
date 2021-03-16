@@ -82,6 +82,18 @@
     stroke-linecap: round;
 }
 
+@media screen and (max-width: 1000px) {
+    .skill:hover {
+        transform : translateY(0);
+    }
+    .skill:not(:first-child) {
+        margin-left: 0;
+    }
+    .skill:hover~.skill{
+        transform : none;
+    }
+}
+
 @media screen and (max-width: 500px) {
 
     
@@ -100,14 +112,6 @@
         transition : .2s;
         overflow-y: visible;
         border-left: 1.5px white solid;
-    }
-
-    .skill:not(:first-child) {
-        margin-left: -16vw;
-    }
-
-    .skill:hover~.skill{
-        transform : translateX(20vw);
     }
     
     .skill header h1 {
