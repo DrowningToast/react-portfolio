@@ -1,20 +1,65 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Raleway:wght@100&family=Redressed&display=swap');
+
+html {
+  font-size: 0.83rem;
+  overflow-x:hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 625px) {
+  html {
+    font-size: 0.53rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #d78484;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 13px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.App {
+  text-align: center;
+
+  background-color: #170C2D;
+
+  position: relative;
+  width : 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +69,218 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.intro {
+  width: 100%;
+  height: 90vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  align-items: flex-end;
+}
+
+.hero-bg {
+  position: absolute;
+  text-align: end;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-image: url('./Home/Background.jpg');
+  background-position: center top 20vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transform: scale(1.75);
+
+  width: 100%;
+  height: 100%;
+
+}
+
+.hero-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -32.5%);
+  font-family: 'Oswald';
+  z-index: 2;
+}
+
+.transition {
+  position: absolute;
+  width: 100%;
+  height: 15vh;
+  z-index: 1;
+  background: rgb(23,12,45);
+  background: linear-gradient(0deg, rgba(23,12,45,1) 0%, rgba(23,12,45,1) 0%, rgba(0,0,0,0) 100%);
+  top: 85vh;
+}
+
+.cards-holder {
+  margin: 30vh 10% 25vh 10%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 805px) {
+  .cards-holder {
+    margin-top : 20vh;
+    margin-bottom: 5vh;
   }
 }
+
+.about-me {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30vh;
+}
+
+.about-me .left, .about-me .right {
+  height: 100%;
+  border: 0px solid white;
+}
+
+.about-me .right {
+  max-width: 60vw;
+}
+
+.about-me .left {
+  width: 32.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me h1 {
+  font-size: 3.5vw;
+}
+
+.about-me .left .img {
+  width: 12.5vw;
+  height: 12.5vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.about-me .left .img div {
+  background-image: url('./Home/portrait.jpeg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.7) translate(-7%);
+}
+
+.about-me .left h2 {
+  margin-top: 4.5vw;
+  margin-bottom: 1rem;
+  font-size: 2.75rem;
+  font-family: 'Redressed';
+}
+
+.about-me .left h3 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-family: 'Raleway';
+}
+
+.about-me .right {
+  margin-left: 4.15vw;
+  margin-right: 4.15vw;
+  min-width: 195px;
+  max-width: 50%;
+}
+
+.about-me .right div {
+  margin-top: 6vh;
+  height: 100%;
+  width: 100%;
+}
+
+.about-me .right p {
+  font-size: 1.7rem;
+  display: block;
+  text-align: justify;
+  margin: 1vh 2vw;
+  text-indent: 10%;
+  font-family: 'Alegreya Sans';
+  text-justify: auto;
+}
+
+@media screen and (max-width : 1100px) { 
+  .about-me .right {
+    margin-left: 4.15vw;
+    margin-right: 4.15vw;
+    min-width: 195px;
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width : 500px) {
+  .about-me {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20vh;
+  }
+  .about-me .left .img {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .about-me .left h2 {
+    margin-top: 4.5vw;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Redressed';
+  }
+
+  .about-me .right p {
+    font-size: 1rem;
+    display: block;
+    text-align: justify;
+    margin: 1vh 2vw;
+    text-indent: 10%;
+    font-family: 'Alegreya Sans';
+    text-justify: auto;
+  }
+
+}
+
+.Skills,.Experience{
+  font-size: 7rem;
+}
+
+.Experience {
+  margin-top : 12rem;
+}
+
+.skill-list {
+  border: 3px solid whitesmoke;
+  border-radius: 11px;
+  width: 95%;
+  display: flex;
+  padding-left : 4rem;
+  margin: 0 2rem;
+  overflow-x: scroll;
+  overflow-y: visible;
+  margin-bottom: 0;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+

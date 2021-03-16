@@ -1,0 +1,48 @@
+{
+    "Python" : {
+        "title" : "Python",
+        "start" : "2018",
+        "desc" : "Had taken a Python class on Mathayom 4 about basic syntax and adaption with databases. Then further studied on Sololearn to the end of the course."
+    },
+    "C++" : {
+        "title" : "C++",
+        "start" : "2018",
+        "desc" : "First language ever learned in 2018, In Matthayom 5 used to create IoT technologies."
+    },
+    "C#" : {
+        "title" : "C#",
+        "start" : "2020",
+        "desc" : "Self-learned on Sololearn, used on Project Wisdom (Unity 2D Side-Scroller Story-driven) under SYSI (Society of Young Social Innovators) Rookie Innovator program and to participate in NSC 2020 (National Software Contest)."
+    },
+    "Java" : {
+        "title" : "Java",
+        "start" : "2020",
+        "desc" : "Took class up to OOP and GUI level."
+    },
+    "HTML" : {
+        "title" : "HTML5",
+        "start" : "2018",
+        "desc" : "Took class on basic static HTML then studied additionally by myself in 2019 - 2020. "
+    },
+    "CSS" : {
+        "title" : "CSS3",
+        "start" : "2019",
+        "desc" : "Started learning CSS3 on my own at Codecademy.com"
+    },
+    "NodeJS" : {
+        "title" : "nodeJS",
+        "start" : "2019",
+        "desc" : "Started studying Javascript in late 2019 then in 2020 took class on Codecademy and currently taking class on Server-side Development with NodeJS, Express and MongoDB by The Hong Kong University of Science and Technology on Coursera.org ."
+    },
+    "React" : {
+        "title" : "React Hook",
+        "start" : "2020",
+        "desc" : "Started taking class on React Class Component from Codecademy in late 2020 then further studied on my own about React Hooks and Redux (State Manager)."
+    },
+    "SQL" : {
+        "title" : "SQL",
+        "start" : "2021",
+        "desc" : "Currently taking class about SQL for Data Science by University of California, Davis on Coursera.org"
+    }
+
+}
